@@ -57,10 +57,10 @@ class Motus:
         self.__essai += 1
         if teste == self.__mot:
             self.__game_over = True
-            self.__texte.config(text=f"Victoire")
+            self.__texte.config(text="Victoire")
         elif self.__essai >= Essai_max:
             self.__game_over = True
-            self.__texte.config(text=f"Perdu")
+            self.__texte.config(text="Perdu")
         else:
             self.__texte.config(text=f"Essai {self.__essai}/{Essai_max}")
 
